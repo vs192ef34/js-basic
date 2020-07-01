@@ -1,13 +1,23 @@
-const greeting = "Hello";
-const daysInWeek = 7;
-const pi = 3.1415926;
+"use strict";
 
-let daysInJune = 29;
+const age = -10;
 
-console.log(`Greeting = ${greeting}`);
-console.log(`Days in Week: ${daysInWeek}`);
-console.log(`PI value is ${pi}`);
+if (age <= 0) {
+  console.log("Incorrect age.");
+  return;
+}
 
-daysInJune = 30;
+console.log(`Your age is: ${age}`);
 
-console.log(`Days in June: ${daysInJune}`);
+if (age >= 18) {
+  const yearsTillRetirement = 65 - age;
+  console.log("You are Adult");
+  if (yearsTillRetirement > 0) {
+    console.log(`Years till retirement ${yearsTillRetirement}`);
+  } else {
+    console.log(`You are probably dead ;))))`);
+  }
+} else {
+  console.log("You are Teenager");
+  console.log("You are too young for retirement!!! :)");
+}
