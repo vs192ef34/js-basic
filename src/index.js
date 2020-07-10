@@ -16,11 +16,6 @@ const age = 0;
 100 - +Infinity - Дункан МакЛауд
 */
 
-const ageIntervals = [
-  [-Infinity, 0, "некорректные данные"],
-  [0, 1, "младенец"],
-];
-
 if (age < 0) {
   console.log("Некорректный возраст");
   return;
@@ -188,16 +183,3 @@ for (let index = 0; index < arr.length; index++) {
   const element = arr[index];
   console.log(element);
 }
-
-console.log("++++++++++++++++++++++++++++++++++++");
-
-//const n = [];
-let sum = 1;
-for (let index = 123; index <= 147; index = index + 1) {
-  //n.push(index);
-  sum = sum + index;
-  console.log(index);
-}
-
-console.log(sum);
-//console.log(n);
